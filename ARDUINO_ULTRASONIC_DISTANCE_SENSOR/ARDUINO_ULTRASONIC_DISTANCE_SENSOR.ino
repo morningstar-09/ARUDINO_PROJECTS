@@ -1,7 +1,9 @@
+//Code downloaded from https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/ARDUINO_ULTRASONIC_DISTANCE_SENSOR
 #define echoPin 2 
 #define trigPin 3 
 long duration; 
 int distance;
+//Code downloaded from https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/ARDUINO_ULTRASONIC_DISTANCE_SENSOR
 void setup() {
   pinMode(trigPin, OUTPUT); 
   pinMode(echoPin, INPUT); 
@@ -9,6 +11,7 @@ void setup() {
   Serial.println("Ultrasonic Sensor HC-SR04 Test"); 
   Serial.println("with Arduino UNO R3");
 }
+//Code downloaded from https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/ARDUINO_ULTRASONIC_DISTANCE_SENSOR
 void loop() { 
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);  
@@ -21,3 +24,4 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
 }
+//Code downloaded from https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/ARDUINO_ULTRASONIC_DISTANCE_SENSOR
