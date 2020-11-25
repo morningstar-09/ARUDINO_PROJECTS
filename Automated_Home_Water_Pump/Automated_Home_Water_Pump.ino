@@ -5,6 +5,7 @@
  *  Email: tushartg600@gmail.com
  *  Contact Number: (+91) 8005791568
  */
+//code downloaded from: https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/Automated_Home_Water_Pump
 
 const int TRIG_PIN  = 7; 
 const int ECHO_PIN  = 6; 
@@ -12,6 +13,7 @@ const int RELAY_PIN = 2;
 
 
 float duration_us, distance_cm;
+//code downloaded from: https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/Automated_Home_Water_Pump
 
 void setup() {
   Serial.begin (9600);        
@@ -23,9 +25,11 @@ void dis(){
     digitalWrite(TRIG_PIN, HIGH);
     delayMicroseconds(10);
     digitalWrite(TRIG_PIN, LOW);
-    
+   //code downloaded from: https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/Automated_Home_Water_Pump
+ 
     duration_us = pulseIn(ECHO_PIN, HIGH);
-    
+ //code downloaded from: https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/Automated_Home_Water_Pump
+   
     distance_cm = 0.017 * duration_us;
     Serial.print("distance: ");
     Serial.print(distance_cm);
@@ -64,6 +68,8 @@ void loop() {
      goto b;
     }
   }
+  //code downloaded from: https://github.com/morningstar-09/ARUDINO_PROJECTS/tree/master/Automated_Home_Water_Pump
+
 
 }
 /* Project made by Tushar Gupta (ECE Undergraduate, IIIT Bhopal)
